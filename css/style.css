@@ -156,14 +156,14 @@ p {
     overflow: hidden;
 }
 #home_info .info-content p {
-    padding-bottom: 30px;
+    padding-bottom: 25%;
 }
 
 /* Features */
 .box {
     float: left;
     width: 33.3%;
-    padding: 50px;
+    padding: 3%;
     text-align: center;
 }
 .box i {
