@@ -5,10 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Welcome to the most extraordinary Hotel In Colombia">
-    <meta name="keywords" content="Hotel, Colombia, Hotel in Colombia, New Colombia Hotel">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <!-- Buscador -->
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="js/jquery-3.5.1.min.js">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <script src="js/semantic.min.js"></script>
+    <!-- fin buscador -->
     <title>Costos y multas</title>
 </head>
 <body>
@@ -29,13 +37,12 @@
 </header>
 
 <section id="about-info" class="bg-light py-3">
-    <div class="container">
+    <div class="container" id="multa">
         <div class="info-left">
-            <h1 class="l-heading"><span class="text-primary">Costos</span> y multas</h1>
-           
+            <h1 class="l-heading" id="hmulta"><span class="text-primary">Costos</span> y multas</h1>
         </div>
         <div class="info-right">
-            <img src="./img/logo.png" alt="hotel">
+            <img src="./img/logo.png">
         </div>
     </div>
 </section>
@@ -48,7 +55,17 @@
 <div class="clr"></div>
     <div class="container">
         <h2 class="l-heading">Lista de infacciones y costos</h2>
-        <input type="text" id="formulario" class="form-control">
+        <!-- <input type="text" id="formulario" class="form-control"> -->
+
+        <!-- Buscador -->
+        <div class="ui blue inverted segment">
+            <div class="ui fluid icon input">
+                <input type="text" id="formulario" class="form-control" placeholder="&#x1f50d;&#xfe0e; Escribe al menos 2 letras">
+                <!-- <i class="search icon"></i> -->
+            </div>
+        </div>
+        <br>
+        <!-- Fin buscador -->
     <div id="lista">
 
     </div>
@@ -113,11 +130,11 @@
         for(let multa of multas){
             let multaux = multa.multa.toLowerCase();
             if(multaux.indexOf(text)!==-1){
-                resultado.innerHTML+= `  
-                <div class="testimonial bg-primary">
+                resultado.innerHTML+= `      
+            <div class="ui blue inverted segment">
             <p>${multa.multa} </p>
             <p style="text-align: right;">$${multa.costo}</p>
-            </div>  
+            </div><p>  
                 `;
             }
         }
