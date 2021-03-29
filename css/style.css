@@ -91,7 +91,6 @@ p {
     color: #fff;
     overflow: auto;
 }
-
 #navbar a {
     color: #ffffff;
 
@@ -157,14 +156,14 @@ p {
     overflow: hidden;
 }
 #home_info .info-content p {
-    padding-bottom: 25%;
+    padding-bottom: 30px;
 }
 
 /* Features */
 .box {
     float: left;
     width: 33.3%;
-    padding: 3%;
+    padding: 50px;
     text-align: center;
 }
 .box i {
@@ -172,15 +171,6 @@ p {
 }
 
 /* About Info*/
-
-#multa{
-    background: url("../img/dinero.jpg")no-repeat center center/cover ;
-    opacity: 6.0;
-    /* padding-top: 100px; */
-}
-#hmulta{
-    background-color: rgba(255, 255, 255, 0.300);
-}
 #about-info .info-right{
     float: right;
     width: 50%;
@@ -208,9 +198,9 @@ p {
     padding-top: 100px;
 }
 #testimonial{
-    height: 40%;
+    height: 100%;
     background: url("../img/reglamento.jpg")no-repeat center center/cover;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 #testimonials h2 {
     color: #ffffff;
@@ -276,11 +266,6 @@ p {
 #contact-form textarea:focus {
     outline: none;
     border-color: #f7c08a;
-}
-/* acordeon */
-#acor_titulo:hover{
-    background: #93f3d9;
-	color: #000;
 }
 
  /* Footer*/
