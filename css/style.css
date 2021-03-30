@@ -174,12 +174,12 @@ p {
 /* About Info*/
 
 #multa{
-    background: url("../img/dinero.jpg")no-repeat center center/cover ;
-    opacity: 6.0;
+    background: url("../img/dinero.jpg")no-repeat center center/cover ; 
+
     /* padding-top: 100px; */
 }
-#hmulta{
-    background-color: rgba(255, 255, 255, 0.300);
+.mul{
+    color: white;
 }
 #about-info .info-right{
     float: right;
