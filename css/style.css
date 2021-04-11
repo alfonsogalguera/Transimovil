@@ -19,7 +19,6 @@ a {
 h1, h2, h3 {
     padding-bottom: 20px;
 }
-
 p {
     margin: 10px 0;
 }
@@ -84,12 +83,29 @@ p {
 .py-3 {
     padding: 30px 0;
 }
+/*Navbar index*/
+.index{
+    background: #333;
+    color: #fff;
+    overflow: auto;
+    padding-bottom: 0%;
+    
+}
+.index h1{
+    
+    float: left;
+    padding-top: 10px;
+    font-size: 2vw;
+    padding-bottom: 0px;
+
+}
 
 /* Navbar*/
 #navbar {
     background: #333;
     color: #fff;
     overflow: auto;
+    padding: auto;
 }
 
 #navbar a {
