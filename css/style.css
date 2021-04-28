@@ -103,6 +103,10 @@ p {
     padding-bottom: 0px;
 
 }
+.numemergencia{
+    text-align: center;
+    padding-bottom: 7.8%;
+}
 
 /* Navbar*/
 #navbar {
@@ -160,7 +164,7 @@ p {
 
 /* Home Info*/
 #home_info {
-    height: 450px;
+    height: 100%;
 }
 #home_info .info-img {
     float: left;
@@ -306,6 +310,7 @@ p {
  /* Footer*/
 
 #main-footer {
+    position:static;
     text-align: center;
     background: #444444;
     color: #ffffff;
